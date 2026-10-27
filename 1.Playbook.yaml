@@ -1,4 +1,4 @@
-- name: ping pong
+- name: ping
   host: localhost #just for checking local Ansible server
   connection: local # it will not except any cred
   tasks: #tasks == modules == collections
