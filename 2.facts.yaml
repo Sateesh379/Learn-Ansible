@@ -2,6 +2,6 @@
   hosts: local
   connection: local
   tasks:
-   -name: print the facts
-    debug:
+   - name: print the facts
+     debug:
       msg: "{{ansible_facts}}""
