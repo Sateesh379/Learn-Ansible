@@ -2,7 +2,7 @@
   hosts: localhost
   connection: local
   vars:
-   number:25
+   number: 25
   tasks:
   - name: check number is odd or even
     debug:
@@ -11,6 +11,6 @@
 
   - name: check number is odd or even
     debug:
-       msg: number is odd
-       when: number % 2 != 0
+      msg: "number is odd"
+      when: number % 2 != 0
   
