@@ -1,0 +1,26 @@
+- name: Course Details
+  hosts: localhost
+  connection: local
+  tasks:
+   vars:
+     course: Devops + AIOps and DevSecops
+     duration: 4 months
+     is live sessions: true
+     topics:
+      - ANsible
+      - Docker
+      - Linux
+      - Shell Scritpting
+      - kubernetes
+       moredetails:
+       trainer: Sateesh
+       exact_duration_in_months: 4.5
+     - name: print Course details
+          deubg:
+           msg: |
+            course name: {{course}} : {{course | type_debug}}
+            duration: {{duration}} : {{duration | type_debug}}
+            live session: {{is live sessions}} : {{is live sessions | type_debug}}
+            topics: {{topics}} : {{topics | type_debug}}
+            trainer name: {{trainer}} : {{trainer | type_debug}}
+            Total duration: {{exact_duration_in_months}} : {{exact_duration_in_months | type_debug}}
