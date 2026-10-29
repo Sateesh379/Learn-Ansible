@@ -10,7 +10,7 @@
     - apache2
   tasks:
   - name: install applications
-     package:
+    package:
       name: "{{ item}}"
       state: present
-  loop: "{{ list}}"
+  loop: "{{ list }}"
