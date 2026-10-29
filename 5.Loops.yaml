@@ -2,6 +2,8 @@
   hosts: localhost
   connection: local
   become: yes
+   debug:
+      msg: "installing {{ item }}"
   vars:
    list:
     - git
