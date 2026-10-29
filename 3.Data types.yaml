@@ -16,11 +16,11 @@
          exact_duration_in_months: 4.5
   tasks:
   - name: print Course details
-          debug:
-           msg: |
-            course name: {{course}} : {{course | type_debug}}
-            duration: {{duration}} : {{duration | type_debug}}
-            live session: {{is_live_sessions}} : {{is_live_sessions | type_debug}}
-            topics: {{topics}} : {{topics | type_debug}}
-            trainer name: {{trainer}} : {{trainer | type_debug}}
-            Total duration: {{exact_duration_in_months}} : {{exact_duration_in_months | type_debug}}
+     debug:
+       msg: |
+       course name: {{course}} : {{course | type_debug}}
+       duration: {{duration}} : {{duration | type_debug}}
+       live session: {{is_live_sessions}} : {{is_live_sessions | type_debug}}
+       topics: {{topics}} : {{topics | type_debug}}
+       trainer name: {{trainer}} : {{trainer | type_debug}}
+       Total duration: {{exact_duration_in_months}} : {{exact_duration_in_months | type_debug}}
