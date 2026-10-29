@@ -1,0 +1,15 @@
+- name: install applications
+  hosts: localhost
+  connection: local
+  vars:
+   list:
+    - git
+    - mysql
+    - nginx
+    - apache2
+  tasks:
+  - name: install applications
+     package:
+      name: "{{ item}}"
+      state: present
+  loop: "{{ list}}"
