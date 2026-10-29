@@ -5,22 +5,22 @@
    vars:
      course: Devops + AIOps and DevSecops
      duration: 4 months
-     is live sessions: true
+     is_live_sessions: true
      topics:
       - ANsible
       - Docker
       - Linux
-      - Shell Scritpting
+      - ShellScritpting
       - kubernetes
        moredetails:
-       trainer: Sateesh
-       exact_duration_in_months: 4.5
+         trainer: Sateesh
+         exact_duration_in_months: 4.5
      - name: print Course details
-          deubg:
+          debug:
            msg: |
             course name: {{course}} : {{course | type_debug}}
             duration: {{duration}} : {{duration | type_debug}}
-            live session: {{is live sessions}} : {{is live sessions | type_debug}}
+            live session: {{is_live_sessions}} : {{is_live_sessions | type_debug}}
             topics: {{topics}} : {{topics | type_debug}}
             trainer name: {{trainer}} : {{trainer | type_debug}}
             Total duration: {{exact_duration_in_months}} : {{exact_duration_in_months | type_debug}}
