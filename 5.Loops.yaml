@@ -1,6 +1,7 @@
 - name: install applications
   hosts: localhost
   connection: local
+  become: yes
   vars:
    list:
     - git
