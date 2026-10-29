@@ -12,8 +12,8 @@
       - ShellScripting
       - kubernetes
      moredetails:
-         trainer: Sateesh
-         exact_duration_in_months: 4.5
+      trainer: Sateesh
+      exact_duration_in_months: 4.5
   tasks:
   - name: print Course details
     debug:
