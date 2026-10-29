@@ -2,18 +2,18 @@
   hosts: localhost
   connection: local
   vars:
-     course: Devops+AIOps and DevSecops
-     duration: 4months
-     is_live_sessions: true
-     topics:
+     course: Devops+AIOps and DevSecops #AnsibleUnicode
+     duration: 4months #AnsibleUnicode
+     is_live_sessions: true #boolean(bool)
+     topics: #list
       - Ansible
       - Docker
       - Linux
       - ShellScripting
       - kubernetes
      moredetails:
-      trainer: Sateesh
-      exact_duration_in_months: 4.5
+      trainer: Sateesh #AnsibleUnicode
+      exact_duration_in_months: 4.5 #float
   tasks:
   - name: print Course details
     debug:
