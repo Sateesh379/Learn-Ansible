@@ -7,10 +7,10 @@
   - name: check number is odd or even
     debug:
       msg: number is even
-      when: number % 2 == 0
+    when: number % 2 == 0
 
   - name: check number is odd or even
     debug:
       msg: "number is odd"
-      when: number % 2 != 0
+    when: number % 2 != 0
   
