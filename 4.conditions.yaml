@@ -5,12 +5,12 @@
     number:25
   tasks:
   - name: check number is odd or even
-     debug:
+    debug:
       msg: number is even
       when: number % 2 == 0
 
-  - name: check number is odd or even
-     debug:
-      msg: number is odd
-      when: number % 2 != 0
+    - name: check number is odd or even
+      debug:
+       msg: number is odd
+       when: number % 2 != 0
   
