@@ -2,8 +2,11 @@
   hosts: localhost
   connection: local
   become: yes
+   
+- name: installing
+  tasks:
    debug:
-      msg: "installing {{ item }}"
+    msg: "installing {{ item }}"
   vars:
    list:
     - git
