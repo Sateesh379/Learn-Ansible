@@ -2,8 +2,8 @@
   hosts: localhost
   connection: local
   vars:
-     course: Devops + AIOps and DevSecops
-     duration: 4 months
+     course: Devops+AIOps and DevSecops
+     duration: 4months
      is_live_sessions: true
      topics:
       - Ansible
@@ -22,5 +22,5 @@
        duration: {{duration}} : {{duration | type_debug}}
        live session: {{is_live_sessions}} : {{is_live_sessions | type_debug}}
        topics: {{topics}} : {{topics | type_debug}}
-       trainer name: {{trainer}} : {{trainer | type_debug}}
-       Total duration: {{exact_duration_in_months}} : {{exact_duration_in_months | type_debug}}
+       trainer name: {{moredetails.trainer}} : {{moredetails.trainer | type_debug}}
+       Total duration: {{moredetails.exact_duration_in_months}} : {{moredetails.exact_duration_in_months | type_debug}}
